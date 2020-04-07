@@ -1,0 +1,11 @@
+GET /api/todos controllers.TodoController.index
+GET /api/todo/:id controllers.TodoController.getById(id)
+
++nocsrf
+POST /api/todos controllers.TodoController.add()
++nocsrf
+PUT /api/todo/:id controllers.TodoController.updateById(id)
++nocsrf
+PUT /api/todo/:id/complete controllers.TodoController.complete(id)
++nocsrf
+DELETE /api/todo/:id  controllers.TodoController.delete(id)
